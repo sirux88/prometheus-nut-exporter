@@ -102,6 +102,9 @@ fn print_ups_info_metric(ups: &str, vars: &VarMap) -> String {
     add_var_label("usb_product_id", "ups.productid");
     add_var_label("ups_firmware", "ups.firmware");
     add_var_label("ups_type", "ups.type");
+    add_var_label("ups_last_self_test_date", "ups.test.date");
+    add_var_label("ups_last_self_test_result", "ups.test.result");
+    add_var_label("ups_self_test_interval", "ups.test.interval");
     // Deprecated
     add_var_label("type", "device.type");
     add_var_label("nut_version", "driver.version");
